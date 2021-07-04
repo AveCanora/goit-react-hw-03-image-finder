@@ -1,7 +1,7 @@
 import { Component } from 'react';
-import s from './App.module.css';
+import styles from './App.module.css';
 
-import fetchImg from "./components/API/Pixabay";
+import fetchImg from "./API/Pixabay";
 import Searchbar from "./components/Searchbar";
 import ImageGallery from "./components/ImageGallery";
 import Modal from "./components/Modal";
@@ -69,7 +69,7 @@ class App extends Component {
     const { images, isLoading, largeURL, error, tags } = this.state;
 
     return (
-      <div className={s.App}>
+      <div className={styles.App}>
         {error && (
           <span style={{ color: 'red', fontSize: 46 }}>
             Something went wrong:{error.message}
